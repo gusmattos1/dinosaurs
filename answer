@@ -1,0 +1,16 @@
+
+1 - SELECT COUNT(id) FROM dinos
+
+2- SELECT * FROM dinos WHERE period = 'Jurassic'
+
+3 - SELECT SUM(length) FROM dinos WHERE period = 'Cretaceous';
+
+4 - SELECT * FROM dinos WHERE period = 'Jurassic' OR period = 'Cretaceous' ORDER BY species ASC;
+
+5 - SELECT * FROM dinos WHERE t_order = 'Saurischia' AND diet = 'Herbivorous';
+
+6 - SELECT MIN(length) from dinos;                        # This will give the shorties Dinosaur
+    SELECT * FROM dinos WHERE length = 0.08;              # This will show the dino and secure that is just 1
+    UPDATE dinos SET name='shortie' WHERE length = 0.08;  # This Will update the name
+    
+7 - SELECT * FROM dinos ORDER BY name ASC LIMIT 1;  #this will order the list by name alphabetically and show only the first
